@@ -1,0 +1,83 @@
+#HeaderCover {
+  background-image: url("../../Assets/pattern-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#InputWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 38.75%;
+  height: 53px;
+}
+#InputElement{
+    height: 100%;
+    flex-basis: 70%;
+    border-radius: 15px 0 0 15px;
+    padding: 0;
+    border: none;
+}
+#InputElement:focus{
+    outline: none;
+}
+#InputElement::placeholder{
+    padding-left: 25px;
+}
+
+#BtnElement {
+  background-image: url("../../Assets/icon-arrow.svg");
+  background-color: black;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+  border-radius: 0 15px 15px 0;
+  width: 58px;
+  height: 100%;
+}
+
+#OutterInfoWrapper{
+    width: 80%;
+    height: 161px;
+    background-color: white;
+    position: absolute;
+    top: 17%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+#InnerInfoWrapper{
+
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ChildInfo:not(:last-child) { 
+    border-right: rgb(201, 199, 199) 1px solid;
+
+}
+
+.ChildInfo{
+    flex-grow: 1;
+    height: 61%;
+    display: flex;
+    padding-left: 10px;
+
+}
+
+.ChildHeader{
+    font-size: 100%;
+    color: #a7a5a5;
+}
