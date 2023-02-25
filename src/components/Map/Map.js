@@ -4,7 +4,7 @@ import GoogleMapReact from "google-map-react";
 import MyMarker from "../MyMarker/MyMarker";
 export default function Map(props) {
   const [mapLocation, setMapLocation] = useState({
-    center: [17, 18],
+    center: [39.0742, 21.8243],
     zoom: 12,
   });
 
